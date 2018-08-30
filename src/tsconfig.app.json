@@ -1,0 +1,18 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@utils/*": ["app/modules/utils/*"],
+      "@task/*": ["app/modules/task/*"],
+      "@matDes/*": ["app/modules/material-design/*"]
+    },
+    "outDir": "../out-tsc/app",
+    "module": "es2015",
+    "types": []
+  },
+  "exclude": [
+    "src/test.ts",
+    "**/*.spec.ts"
+  ]
+}
